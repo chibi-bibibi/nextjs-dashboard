@@ -13,7 +13,7 @@ const Contents = () => {
           </div>
           <Image
             className="p-8"
-            src={'/../../../public/playing/choju74_0001_0.png'}
+            src={'/../../public/playing/choju74_0001_0.png'}
             width={200}
             height={200}
             alt="Playing panda"
