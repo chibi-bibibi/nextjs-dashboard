@@ -8,15 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        default: '#DAC9A6',
+      },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
-        },
+        default: '#DAC9A6',
+        default_dark: '#cab996',
+        blue: '#211E55',
+        red: '#8E354A',
+        red_dark: '#9E7A7A',
+        red_light: '#98374e'
       },
     },
     keyframes: {
