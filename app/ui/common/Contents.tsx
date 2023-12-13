@@ -7,7 +7,9 @@ const dir = String(process.env.BACKEND_URL)
 const Contents = () => {
   console.log(String(process.env.BACKEND_URL))
   return (
+    
     <div className="flex items-center justify-center p-6  ">
+      <a>{dir}</a>
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
