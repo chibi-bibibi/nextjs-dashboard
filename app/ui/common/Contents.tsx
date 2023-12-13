@@ -4,7 +4,7 @@ import Link from 'next/link';
 const dir = String(process.env.BACKEND_URL)
 
 const Contents = () => {
-  console.log( String(process.env.NODE_ENV) )
+  console.log(String(process.env.BACKEND_URL))
   return (
     <div className="flex items-center justify-center p-6  ">
       <div className="overflow-hidden rounded border-2 border-red">
