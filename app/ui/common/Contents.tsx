@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const dir = String(process.env.BACKEND_URL)
+const dir = String(process.env.BACKEND_URL).replace('undefined/', '')
+
 
 const Contents = () => {
   console.log(String(process.env.BACKEND_URL))
