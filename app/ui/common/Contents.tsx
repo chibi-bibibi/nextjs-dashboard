@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const dir = String(process.env.BACKEND_URL).replace('undefined/', '')
+const dir = String(process.env.BACKEND_URL).replace('undefined', '')
 
 
 const Contents = () => {
@@ -11,7 +11,7 @@ const Contents = () => {
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={'/'+dir+'panda.png'}
+            src={'/'+dir+'/panda.png'}
             width={200}
             height={200}
             alt="Playing panda"
