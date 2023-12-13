@@ -5,14 +5,13 @@ const dir = String(process.env.BACKEND_URL)
 
 
 const Contents = () => {
-  console.log(String(process.env.BACKEND_URL))
   return (
     
     <div className="flex items-center justify-center p-6  ">
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={'/panda.png'}
+            src={process.env.NODE_ENV === 'production'? 'next-dashboard/panda.png':'/panda.png'}
             width={200}
             height={200}
             alt="Playing panda"
@@ -26,7 +25,7 @@ const Contents = () => {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="/playing/customers">
             <Image
-              src={'/kaeru.png'}
+              src={process.env.NODE_ENV === 'production'? 'next-dashboard/kaeru.png':'kaeru.png'}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"

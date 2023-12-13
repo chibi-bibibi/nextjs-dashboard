@@ -1,4 +1,4 @@
-const prod = process.env.NODE_ENV === 'production'
+export const prod = process.env.NODE_ENV === 'production'
 
 console.log(process.env.NODE_ENV)
 

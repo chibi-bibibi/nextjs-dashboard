@@ -10,7 +10,7 @@ export default function Page() {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="dashboard/customers">
             <Image
-              src={`/kaeru.png`}
+              src={process.env.NODE_ENV === 'production'? 'next-dashboard/kaeru.png':'/kaeru.png'}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"
