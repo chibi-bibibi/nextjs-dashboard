@@ -12,19 +12,19 @@ export const hands = [
   {
     id: 1,
     text: 'グー',
-    playerImage: 'next-dashboard/playing/janken/zyanken_nekonogu-.png',
-    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_gu.png',
+    playerImage: 'playing/janken/zyanken_nekonogu-.png',
+    npcImage: 'playing/janken/doubutu_tanukinozyanken_gu.png',
   },
   {
     id: 2,
     text: 'チョキ',
-    playerImage: 'next-dashboard/playing/janken/zyanken_nekonotyoki.png',
-    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_tyoki.png',
+    playerImage: 'playing/janken/zyanken_nekonotyoki.png',
+    npcImage: 'playing/janken/doubutu_tanukinozyanken_tyoki.png',
   },
   {
     id: 3,
     text: 'パー',
-    playerImage: 'next-dashboard/playing/janken/zyanken_nekonopa-.png',
-    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_pa.png',
+    playerImage: 'playing/janken/zyanken_nekonopa-.png',
+    npcImage: 'playing/janken/doubutu_tanukinozyanken_pa.png',
   },
 ];
