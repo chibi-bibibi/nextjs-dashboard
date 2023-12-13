@@ -9,7 +9,7 @@ const Contents = () => {
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={`../../../../public/panda.png`}
+            src={`${dir}/panda.png`}
             width={200}
             height={200}
             alt="Playing panda"
@@ -23,7 +23,7 @@ const Contents = () => {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="/playing/customers">
             <Image
-              src={`../../../../public/kaeru.png`}
+              src={`${dir}/kaeru.png`}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"
