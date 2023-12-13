@@ -9,7 +9,6 @@ const Contents = () => {
   return (
     
     <div className="flex items-center justify-center p-6  ">
-      <a>{dir}</a>
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
