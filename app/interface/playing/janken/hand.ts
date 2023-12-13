@@ -12,19 +12,19 @@ export const hands = [
   {
     id: 1,
     text: 'グー',
-    playerImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/zyanken_nekonogu-.png':'/playing/janken/zyanken_nekonogu-.png',
-    npcImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/doubutu_tanukinozyanken_gu.png':'playing/janken/doubutu_tanukinozyanken_gu.png',
+    playerImage: 'next-dashboard/playing/janken/zyanken_nekonogu-.png',
+    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_gu.png',
   },
   {
     id: 2,
     text: 'チョキ',
-    playerImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/zyanken_nekonotyoki.png':'/playing/janken/zyanken_nekonotyoki.png',
-    npcImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/doubutu_tanukinozyanken_tyoki.png':'playing/janken/doubutu_tanukinozyanken_tyoki.png',
+    playerImage: 'next-dashboard/playing/janken/zyanken_nekonotyoki.png',
+    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_tyoki.png',
   },
   {
     id: 3,
     text: 'パー',
-    playerImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/zyanken_nekonopa-.png':'/playing/janken/zyanken_nekonopa-.png',
-    npcImage: process.env.NODE_ENV === 'production'? 'next-dashboard/playing/janken/doubutu_tanukinozyanken_pa.png':'playing/janken/doubutu_tanukinozyanken_pa.png',
+    playerImage: 'next-dashboard/playing/janken/zyanken_nekonopa-.png',
+    npcImage: 'next-dashboard/playing/janken/doubutu_tanukinozyanken_pa.png',
   },
 ];

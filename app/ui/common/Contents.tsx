@@ -11,7 +11,7 @@ const Contents = () => {
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={process.env.NODE_ENV === 'production'? 'next-dashboard/panda.png':'/panda.png'}
+            src={'next-dashboard/panda.png'}
             width={200}
             height={200}
             alt="Playing panda"
@@ -25,7 +25,7 @@ const Contents = () => {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="/playing/customers">
             <Image
-              src={process.env.NODE_ENV === 'production'? 'next-dashboard/kaeru.png':'kaeru.png'}
+              src={'next-dashboard/kaeru.png'}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"

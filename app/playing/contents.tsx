@@ -13,7 +13,7 @@ const Contents = () => {
           </div>
           <Image
             className="p-8"
-            src={process.env.NODE_ENV === 'production'? 'next-dashboard/playing/choju74_0001_0.png':'/playing/choju74_0001_0.png'}
+            src={'next-dashboard/playing/choju74_0001_0.png'}
             width={200}
             height={200}
             alt="Playing panda"
@@ -27,8 +27,7 @@ const Contents = () => {
         </div>
         <Image
           className="p-8"
-          src={process.env.NODE_ENV === 'production'? 'next-dashboard/playing/choju74_0001_0.png':'/playing/choju74_0001_0.png'}
-          width={200}
+          src={'next-dashboard/playing/choju74_0001_0.png'}
           height={200}
           alt="Playing panda"
         />
@@ -40,7 +39,7 @@ const Contents = () => {
         </div>
         <Image
           className="p-8"
-          src={process.env.NODE_ENV === 'production'? 'next-dashboard/playing/choju74_0001_0.png':'/playing/choju74_0001_0.png'}
+          src={'next-dashboard/playing/choju74_0001_0.png'}
           width={200}
           height={200}
           alt="Playing panda"
