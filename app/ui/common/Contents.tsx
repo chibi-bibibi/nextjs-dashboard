@@ -4,12 +4,13 @@ import Link from 'next/link';
 const dir = String(process.env.BACKEND_URL)
 
 const Contents = () => {
+  console.log( String(process.env.NODE_ENV) )
   return (
     <div className="flex items-center justify-center p-6  ">
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={`${dir}/panda.png`}
+            src={dir + '/panda.png'}
             width={200}
             height={200}
             alt="Playing panda"
@@ -23,7 +24,7 @@ const Contents = () => {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="/playing/customers">
             <Image
-              src={`${dir}/kaeru.png`}
+              src={'/kaeru.png'}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"
