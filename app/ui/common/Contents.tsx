@@ -11,7 +11,7 @@ const Contents = () => {
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={'next-dashboard/panda.png'}
+            src={'panda.png'}
             width={200}
             height={200}
             alt="Playing panda"
