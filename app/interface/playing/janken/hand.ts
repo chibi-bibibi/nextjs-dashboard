@@ -14,19 +14,19 @@ export const hands = [
   {
     id: 1,
     text: 'グー',
-    playerImage: getImageSrc('janken/zyanken_nekonogu-.png'),
-    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_gu.png'),
+    playerImage: getImageSrc('janken/zyanken_nekonogu-.png', 'playing'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_gu.png', 'playing'),
   },
   {
     id: 2,
     text: 'チョキ',
-    playerImage: getImageSrc('janken/zyanken_nekonotyoki.png'),
-    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_tyoki.png'),
+    playerImage: getImageSrc('janken/zyanken_nekonotyoki.png', 'playing'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_tyoki.png', 'playing'),
   },
   {
     id: 3,
     text: 'パー',
-    playerImage: getImageSrc('janken/zyanken_nekonopa-.png'),
-    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_pa.png'),
+    playerImage: getImageSrc('janken/zyanken_nekonopa-.png', 'playing'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_pa.png', 'playing'),
   },
 ];
