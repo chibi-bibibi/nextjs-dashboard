@@ -4,7 +4,7 @@ import Link from 'next/link';
 const dir = String(process.env.BACKEND_URL)
 export function getImageSrc(filename: string): string {
   if (process.env.NODE_ENV === 'production') {
-    return `nextjs-dashboard/${filename}`
+    return `${filename}`
   } else {
     return `/${filename}`
   }
