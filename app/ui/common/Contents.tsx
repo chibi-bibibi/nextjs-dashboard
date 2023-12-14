@@ -2,7 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const dir = String(process.env.BACKEND_URL)
-
+export function getImageSrc(filename: string): string {
+  if (process.env.NODE_ENV === 'production') {
+    return `nextjs-dashboard/${filename}`
+  } else {
+    return `/${filename}`
+  }
+}
 
 const Contents = () => {
   return (
@@ -25,7 +31,7 @@ const Contents = () => {
         <div className="overflow-hidden rounded border-2 border-red">
           <Link href="/playing/customers">
             <Image
-              src={'/kaeru.png'}
+              src={getImageSrc('kaeru.png')}
               width={200}
               height={200}
               alt="Screenshots of the dashboard project showing desktop version"
