@@ -1,3 +1,5 @@
+import { getImageSrc } from "@/app/utils/getImagePath";
+
 const dir = String(process.env.BACKEND_URL)
 
 export interface Hands {
@@ -12,19 +14,19 @@ export const hands = [
   {
     id: 1,
     text: 'グー',
-    playerImage: 'janken/zyanken_nekonogu-.png',
-    npcImage: 'janken/doubutu_tanukinozyanken_gu.png',
+    playerImage: getImageSrc('janken/zyanken_nekonogu-.png'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_gu.png'),
   },
   {
     id: 2,
     text: 'チョキ',
-    playerImage: 'janken/zyanken_nekonotyoki.png',
-    npcImage: 'janken/doubutu_tanukinozyanken_tyoki.png',
+    playerImage: getImageSrc('janken/zyanken_nekonotyoki.png'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_tyoki.png'),
   },
   {
     id: 3,
     text: 'パー',
-    playerImage: 'janken/zyanken_nekonopa-.png',
-    npcImage: 'janken/doubutu_tanukinozyanken_pa.png',
+    playerImage: getImageSrc('janken/zyanken_nekonopa-.png'),
+    npcImage: getImageSrc('janken/doubutu_tanukinozyanken_pa.png'),
   },
 ];

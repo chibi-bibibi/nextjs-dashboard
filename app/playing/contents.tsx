@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImageSrc } from '../utils/getImagePath';
 
 const dir = String(process.env.BACKEND_URL)
 
@@ -13,7 +14,7 @@ const Contents = () => {
           </div>
           <Image
             className="p-8"
-            src={'playing/choju74_0001_0.png'}
+            src={getImageSrc('playing/choju74_0001_0.png')}
             width={200}
             height={200}
             alt="Playing panda"
@@ -27,7 +28,7 @@ const Contents = () => {
         </div>
         <Image
           className="p-8"
-          src={'playing/choju74_0001_0.png'}
+          src={getImageSrc('playing/choju74_0001_0.png')}
           width={200}
           height={200}
           alt="Playing panda"
@@ -40,7 +41,7 @@ const Contents = () => {
         </div>
         <Image
           className="p-8"
-          src={'playing/choju74_0001_0.png'}
+          src={getImageSrc('playing/choju74_0001_0.png')}
           width={200}
           height={200}
           alt="Playing panda"

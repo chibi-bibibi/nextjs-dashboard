@@ -1,14 +1,9 @@
+import { getImageSrc } from '@/app/utils/getImagePath';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const dir = String(process.env.BACKEND_URL)
-export function getImageSrc(filename: string): string {
-  if (process.env.NODE_ENV === 'production') {
-    return `${filename}`
-  } else {
-    return `/${filename}`
-  }
-}
+
 
 const Contents = () => {
   return (
@@ -17,7 +12,7 @@ const Contents = () => {
       <div className="overflow-hidden rounded border-2 border-red">
         <Link href="/playing">
           <Image
-            src={'/panda.png'}
+            src={getImageSrc('panda.png')}
             width={200}
             height={200}
             alt="Playing panda"
