@@ -3,7 +3,9 @@ import Link from 'next/link';
 
 const Navber = () => {
   return (
-    <nav className={`${styles.nav} flex shrink-0 items-end bg-red sm: min-width:640px;`}>
+    <nav
+      className={`${styles.nav} sm: min-width:640px; flex shrink-0 items-end bg-red`}
+    >
       <ul>
         <Link href="/">
           <p className="text-base font-bold text-default">TOP</p>

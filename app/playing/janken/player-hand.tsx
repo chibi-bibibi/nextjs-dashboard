@@ -10,7 +10,7 @@ const Hand = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-5 text-base font-bold text-blue ">
+      <div className="mt-5 flex flex-col items-center justify-center text-base font-bold text-blue ">
         <p className="text-3xl">じゃんけんアプリ</p>
         <p>出す手を選んで「勝負する」を押してね</p>
       </div>
@@ -22,9 +22,9 @@ const Hand = () => {
               <button
                 key={hand.id}
                 onClick={() => setPlayerHand(hand)}
-                className="sm:hover:transition-transform sm:hover:-translate-y-2 m-2 sm:mx-10 h-40 sm:max-w-sm  overflow-hidden rounded border-2 border-red bg-default_dark"
+                className="m-2 h-40 overflow-hidden rounded border-2 border-red  bg-default_dark sm:mx-10 sm:max-w-sm sm:hover:-translate-y-2 sm:hover:transition-transform"
               >
-                <div className="sm:px-6 pb-2 pt-4">
+                <div className="pb-2 pt-4 sm:px-6">
                   <p className="text-3xl font-bold text-blue">{hand.text}</p>
                   <Image
                     src={hand.playerImage}

@@ -20,7 +20,7 @@ const config: Config = {
         blue: '#211E55',
         red: '#8E354A',
         red_dark: '#9E7A7A',
-        red_light: '#98374e'
+        red_light: '#98374e',
       },
     },
     keyframes: {

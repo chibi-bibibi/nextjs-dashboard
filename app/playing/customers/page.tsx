@@ -1,9 +1,8 @@
-
 import { getImageSrc } from '@/app/utils/getImagePath';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const dir = String(process.env.BACKEND_URL)
+const dir = String(process.env.BACKEND_URL);
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col bg-default">
