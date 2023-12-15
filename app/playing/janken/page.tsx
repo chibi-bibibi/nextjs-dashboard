@@ -4,7 +4,7 @@ import Hand from './player-hand';
 
 const Page = () => {
   return (
-    <main className="flex min-h-screen flex-col bg-default">
+    <main className="flex flex-col min-h-screen  bg-default">
       <Navber />
       <Hand />
       <Footer />

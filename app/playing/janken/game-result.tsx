@@ -3,10 +3,10 @@ import Npc from './npc-hand';
 
 const Result = (props: { result: string; npcHand: Hands }) => {
   return (
-    <div className="flex items-center justify-center p-4 px-8 text-3xl font-bold text-blue ">
-      <p className="w-56">{props.result}</p>
-      {props.npcHand != undefined && <Npc hand={props.npcHand} />}
-    </div>
+    <div className="sm:flex justify-center items-center place-self-center text-3xl font-bold text-blue ">
+      <p className='flex justify-center '>{props.npcHand != undefined && <Npc hand={props.npcHand} />}</p>
+      <p className='flex justify-center sm:w-64 sm:order-first'>{props.result}</p>
+      </div>
   );
 };
 

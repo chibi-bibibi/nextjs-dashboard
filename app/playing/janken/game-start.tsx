@@ -9,6 +9,18 @@ const Start = (props: { choiseHand: Hands }) => {
   const [npcHand, setNpcHand] = useState(hands[0]);
   const [result, setResult] = useState('');
 
+  const PlayerChoise = () => {
+    return (
+      <p className="flex justify-center text-2xl font-bold text-blue sm:w-64 sm:mx-5 my-5">あなたの選択：{player.text}</p>
+    )
+  }
+
+  const NpcChoise = () => {
+    return (
+      <p className="flex justify-center text-2xl font-bold text-blue sm:w-64 sm:mx-5 my-5">NPCの選択：{npcHand.text}</p>
+    )
+  }
+
   const handleClick = () => {
     const npc = hands[Math.floor(Math.random() * 3) + 1];
     setNpcHand(npc);
@@ -30,18 +42,17 @@ const Start = (props: { choiseHand: Hands }) => {
 
   return (
     <>
-      <div className="flex justify-center gap-20 p-6 px-8 text-2xl font-bold text-blue">
-        <p className="w-64">あなたの選択：{player.text}</p>
-        <button
-          disabled={player.id === 0}
-          onClick={() => handleClick()}
-          className="disabled:bg-red_dark h-12 w-56 rounded bg-red hover:bg-red_light"
-        >
-          <p className="text-2xl font-bold text-default_dark">勝負する</p>
+      <div className="sm:flex items-center justify-center ">
+        <PlayerChoise />
+          <button
+            disabled={player.id === 0}
+            onClick={() => handleClick()}
+            className="flex justify-center mx-auto sm:w-56 disabled:bg-red_dark h-12 rounded bg-red hover:bg-red_light"
+          >
+          <p className="self-center p-2 text-2xl font-bold text-default_dark">勝負する</p>
         </button>
-        <p className="w-64">NPCの選択：{npcHand.text}</p>
+        <NpcChoise />
       </div>
-
       <Result result={result} npcHand={npcHand} />
     </>
   );
