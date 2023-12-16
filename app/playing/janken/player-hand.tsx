@@ -29,7 +29,7 @@ const Hand = () => {
             if (hand.playerImage == null) {
               return <>Loading</>;
             } else {
-              const src = hand.playerImage
+              const src = hand.playerImage;
               return (
                 hand.id != 0 && (
                   <button

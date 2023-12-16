@@ -13,7 +13,7 @@ const Navber = () => {
         <Link href="/playing">
           <p className="text-base font-bold text-default">Playing</p>
         </Link>
-        <Link href="/playing/customers">
+        <Link href="/weather">
           <p className="text-base font-bold text-default">Weather</p>
         </Link>
       </ul>

@@ -21,7 +21,7 @@ const Contents = () => {
         </Link>
       </div>
       <div className="m-5 flex justify-center rounded border-2 border-red">
-        <Link href="/playing/customers">
+        <Link href="/weather">
           <Image
             priority={true}
             src={getImageSrc('kaeru.png')}
@@ -31,6 +31,20 @@ const Contents = () => {
           />
           <div className="flex justify-center px-6 pb-2 pt-4">
             <p className="text-base font-bold text-blue">天気を見る</p>
+          </div>
+        </Link>
+      </div>
+      <div className="m-5 flex justify-center rounded border-2 border-red">
+        <Link href="/playing/customers">
+          <Image
+            priority={true}
+            src={getImageSrc('hiyoko.png')}
+            width={200}
+            height={200}
+            alt="Tiping hiyoko"
+          />
+          <div className="flex justify-center px-6 pb-2 pt-4">
+            <p className="text-base font-bold text-blue">ツール</p>
           </div>
         </Link>
       </div>

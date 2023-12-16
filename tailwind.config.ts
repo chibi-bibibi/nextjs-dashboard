@@ -16,7 +16,8 @@ const config: Config = {
       },
       colors: {
         default: '#DAC9A6',
-        default_dark: '#cab996',
+        default_light: '#FFFFE0',
+        default_dark: '#CAB996',
         blue: '#211E55',
         red: '#8E354A',
         red_dark: '#9E7A7A',
