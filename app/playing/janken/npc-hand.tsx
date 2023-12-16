@@ -4,12 +4,12 @@ import { Hands } from '../../interface/playing/janken/hand';
 const Npc = (props: { hand: Hands }) => {
   return (
     <div className="flex justify-center p-6 px-8">
-        <Image
-          src={props.hand.npcImage}
-          width={150}
-          height={150}
-          alt="Playing panda"
-        />
+      <Image
+        src={props.hand.npcImage}
+        width={150}
+        height={150}
+        alt="Playing panda"
+      />
     </div>
   );
 };

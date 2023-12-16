@@ -1,6 +1,5 @@
 import { getImageSrc } from '@/app/utils/getImagePath';
 
-
 export interface Hands {
   id: Number;
   text: string;
@@ -9,7 +8,12 @@ export interface Hands {
 }
 
 export const hands = [
-  { id: 0, text: '未選択', playerImage: '', npcImage: getImageSrc('janken/doubutu_tanuki_karada.png', 'playing') },
+  {
+    id: 0,
+    text: '未選択',
+    playerImage: '',
+    npcImage: getImageSrc('janken/doubutu_tanuki_karada.png', 'playing'),
+  },
   {
     id: 1,
     text: 'グー',

@@ -5,7 +5,7 @@ import { getImageSrc } from '../utils/getImagePath';
 const Contents = () => {
   return (
     <div className="items-center justify-center px-20 sm:flex">
-      <div className="m-5 max-w-sm  flex justify-center overflow-hidden rounded border-2 border-red ">
+      <div className="m-5 flex  max-w-sm justify-center overflow-hidden rounded border-2 border-red ">
         <Link href="/playing/janken">
           <div className="flex justify-center px-6 pb-2 pt-4">
             <p className="text-3xl font-bold text-blue">じゃんけん</p>

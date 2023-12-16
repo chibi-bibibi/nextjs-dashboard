@@ -4,11 +4,11 @@ import { Hands, hands } from '@/app/interface/playing/janken/hand';
 import { useState } from 'react';
 import Result from './game-result';
 
-export default function Start(props: { choiseHand: Hands }){
+export default function Start(props: { choiseHand: Hands }) {
   const player = props.choiseHand;
   const [npcHand, setNpcHand] = useState(hands[0]);
   const [result, setResult] = useState('なに出そうかな');
-  const [flg, setFlg] = useState(false)
+  const [flg, setFlg] = useState(false);
   const npc = hands[Math.floor(Math.random() * 3) + 1];
 
   const PlayerChoise = () => {
@@ -28,19 +28,18 @@ export default function Start(props: { choiseHand: Hands }){
   };
 
   const handleClick = () => {
-    
     if (player.id === npc.id) {
-      setFlg(true)
+      setFlg(true);
       return 'あいこ！';
     } else if (
       (player.id === 1 && npc.id === 2) ||
       (player.id === 2 && npc.id === 3) ||
       (player.id === 3 && npc.id === 1)
     ) {
-      setFlg(true)
+      setFlg(true);
       return 'あなたの勝ち！';
     } else {
-      setFlg(true)
+      setFlg(true);
       return 'たぬきの勝ち！';
     }
   };
@@ -51,7 +50,10 @@ export default function Start(props: { choiseHand: Hands }){
         <PlayerChoise />
         <button
           disabled={player.id === 0}
-          onClick={() => {setResult(handleClick()); setNpcHand(npc)}}
+          onClick={() => {
+            setResult(handleClick());
+            setNpcHand(npc);
+          }}
           className="mx-auto flex h-12 justify-center rounded bg-red hover:bg-red_light disabled:bg-red_dark sm:mx-10 sm:w-56"
         >
           <p className="self-center p-2 text-2xl font-bold text-default_dark">
@@ -60,8 +62,7 @@ export default function Start(props: { choiseHand: Hands }){
         </button>
         <NpcChoise />
       </div>
-        <Result result={result} npcHand={npcHand} />
+      <Result result={result} npcHand={npcHand} />
     </>
   );
-};
-
+}
