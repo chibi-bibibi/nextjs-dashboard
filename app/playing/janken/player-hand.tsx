@@ -29,6 +29,7 @@ const Hand = () => {
             if (hand.playerImage == null) {
               return <>Loading</>;
             } else {
+              const src = hand.playerImage
               return (
                 hand.id != 0 && (
                   <button
@@ -42,7 +43,7 @@ const Hand = () => {
                       </p>
                       <Image
                         priority={true}
-                        src={hand.playerImage}
+                        src={src}
                         width={100}
                         height={100}
                         alt={hand.text}
