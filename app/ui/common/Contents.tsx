@@ -8,6 +8,7 @@ const Contents = () => {
       <div className="m-5 flex justify-center rounded border-2 border-red">
         <Link href="/playing">
           <Image
+            priority={true}
             src={getImageSrc('panda.png')}
             width={200}
             height={200}
@@ -22,6 +23,7 @@ const Contents = () => {
       <div className="m-5 flex justify-center rounded border-2 border-red">
         <Link href="/playing/customers">
           <Image
+            priority={true}
             src={getImageSrc('kaeru.png')}
             width={200}
             height={200}

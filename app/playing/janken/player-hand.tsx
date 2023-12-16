@@ -22,11 +22,12 @@ const Hand = () => {
               <button
                 key={hand.id}
                 onClick={() => setPlayerHand(hand)}
-                className="m-2 h-40 overflow-hidden rounded border-2 border-red  bg-default_dark sm:mx-10 sm:max-w-sm sm:hover:-translate-y-2 sm:hover:transition-transform"
+                className="m-2 h-40 overflow-hidden rounded border-2 border-red  bg-default_dark sm:mx-10 sm:max-w-sm hover:-translate-y-2 sm:hover:transition-transform"
               >
                 <div className="pb-2 pt-4 sm:px-6">
                   <p className="text-3xl font-bold text-blue">{hand.text}</p>
                   <Image
+                    priority={true}
                     src={hand.playerImage}
                     width={100}
                     height={100}
