@@ -13,7 +13,7 @@ export const hands = [
   {
     id: 1,
     text: 'グー',
-    playerImage: getImageSrc('janken/zyanken_nekonogu-.png', 'playing'),
+    playerImage: 'janken/zyanken_nekonogu-.png',
     npcImage: getImageSrc('janken/doubutu_tanukinozyanken_gu.png', 'playing'),
   },
   {

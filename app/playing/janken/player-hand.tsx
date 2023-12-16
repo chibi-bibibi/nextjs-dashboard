@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { hands } from '../../interface/playing/janken/hand';
 import { useState } from 'react';
 import Start from './game-start';
+import { getImageSrc } from '@/app/utils/getImagePath';
 
 const Hand = () => {
   const [playerHand, setPlayerHand] = useState(hands[0]);
@@ -28,7 +29,7 @@ const Hand = () => {
                   <p className="text-3xl font-bold text-blue">{hand.text}</p>
                   <Image
                     priority={true}
-                    src={hand.playerImage}
+                    src={getImageSrc(hand.playerImage, 'playing')}
                     width={100}
                     height={100}
                     alt={hand.text}
