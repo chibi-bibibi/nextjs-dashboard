@@ -4,10 +4,29 @@ import Image from 'next/image';
 import { hands } from '../../interface/playing/janken/hand';
 import { useState } from 'react';
 import Start from './game-start';
-import { getImageSrc } from '@/app/utils/getImagePath';
 
 const Hand = () => {
   const [playerHand, setPlayerHand] = useState(hands[0]);
+
+
+    const pre = () => {
+      hands.map((hand) => {
+        return (
+          <Image
+            key={hand.id}
+            src={hand.playerImage} 
+            alt={'プリロードする'}
+          />
+        )}
+      )
+    }
+
+
+
+
+
+
+
 
   return (
     <>
@@ -29,7 +48,7 @@ const Hand = () => {
                   <p className="text-3xl font-bold text-blue">{hand.text}</p>
                   <Image
                     priority={true}
-                    src={getImageSrc(hand.playerImage, 'playing')}
+                    src={hand.playerImage}
                     width={100}
                     height={100}
                     alt={hand.text}
