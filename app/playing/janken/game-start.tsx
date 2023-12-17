@@ -10,6 +10,7 @@ export default function Start(props: { choiseHand: Hands }) {
   const [result, setResult] = useState('なに出そうかな');
   const [flg, setFlg] = useState(false);
   const npc = hands[Math.floor(Math.random() * 3) + 1];
+  const [resultCount, setResultCount] = useState({win: 0, lose: 0, even: 0 })
 
   const PlayerChoise = () => {
     return (
@@ -29,17 +30,17 @@ export default function Start(props: { choiseHand: Hands }) {
 
   const handleClick = () => {
     if (player.id === npc.id) {
-      setFlg(true);
+      setResultCount({...resultCount, even: resultCount.even + 1});
       return 'あいこ！';
     } else if (
       (player.id === 1 && npc.id === 2) ||
       (player.id === 2 && npc.id === 3) ||
       (player.id === 3 && npc.id === 1)
     ) {
-      setFlg(true);
+      setResultCount({...resultCount, win: resultCount.win + 1});
       return 'あなたの勝ち！';
     } else {
-      setFlg(true);
+      setResultCount({...resultCount, lose: resultCount.lose + 1});
       return 'たぬきの勝ち！';
     }
   };
@@ -62,7 +63,10 @@ export default function Start(props: { choiseHand: Hands }) {
         </button>
         <NpcChoise />
       </div>
-      <Result result={result} npcHand={npcHand} />
+      <div className="items-center justify-center sm:flex ">
+        <Result result={result} npcHand={npcHand} resultCount={resultCount} setResultCount={setResultCount}/>
+
+      </div>
     </>
   );
 }
