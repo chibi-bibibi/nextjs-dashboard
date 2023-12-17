@@ -1,6 +1,7 @@
 import styles from '@/app/ui/home.module.css';
 
 const Main = (props: { title: string }) => {
+  
   return (
     <>
       <header className={styles.main}>
@@ -9,7 +10,7 @@ const Main = (props: { title: string }) => {
       <main>
         <section className={styles.content}>
           <h2>websiteの最新情報</h2>
-          <p>最新の情報をご案内します。</p>
+          <p>じゃんけんアプリに勝敗カウントを追加しました。</p>
         </section>
       </main>
     </>
