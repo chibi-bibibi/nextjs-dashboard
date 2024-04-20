@@ -1,7 +1,6 @@
 import styles from '@/app/ui/home.module.css';
 
 const Main = (props: { title: string }) => {
-  
   return (
     <>
       <header className={styles.main}>
