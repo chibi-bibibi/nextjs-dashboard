@@ -8,8 +8,8 @@ const Main = (props: { title: string }) => {
       </header>
       <main>
         <section className={styles.content}>
-          <h2>websiteの最新情報</h2>
-          <p>じゃんけんアプリに勝敗カウントを追加しました。</p>
+          <h2>更新情報</h2>
+          <p>天気予報アプリを実装しました。</p>
         </section>
       </main>
     </>
