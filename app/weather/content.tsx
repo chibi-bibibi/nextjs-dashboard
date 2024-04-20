@@ -128,7 +128,7 @@ const Content = () => {
       {forecast && (
         <div className="items-center justify-center px-20 sm:flex ">
           <div className="bg-de h-full justify-center sm:flex sm:w-4/5">
-            <div className="mx-10 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:w-1/3">
+            <div className="mx-1 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:mx-10 sm:w-1/3">
               <p className="text-3xl font-bold  text-blue">
                 {forecast.today.date}
               </p>
@@ -158,7 +158,7 @@ const Content = () => {
               </p>
             </div>
 
-            <div className="mx-10 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:w-1/3">
+            <div className="mx-1 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:mx-10 sm:w-1/3">
               <p className="text-3xl font-bold  text-blue">
                 {forecast.tomorrow.date}
               </p>
@@ -188,7 +188,7 @@ const Content = () => {
               </p>
             </div>
 
-            <div className="mx-10 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:w-1/3">
+            <div className="mx-1 my-5 flex h-96 flex-col items-center rounded border-2 border-red bg-default_light sm:mx-10 sm:w-1/3">
               <p className="text-3xl font-bold  text-blue">
                 {forecast.future.date}
               </p>
